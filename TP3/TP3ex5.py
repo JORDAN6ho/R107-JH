@@ -3,13 +3,13 @@ while True:
     fin = int(input("Donnez lâ€™heure de fin de la location (un entier) : "))
 
     if not (0 <= debut <= 24) or not (0 <= fin <= 24):
-        print("Les heures doivent Ãªtre comprises entre 0 et 24 !")
+        print("Les heures doivent être comprises entre 0 et 24 !")
         continue
     if debut == fin:
-        print("Attention ! lâ€™heure de fin est identique Ã  lâ€™heure de dÃ©but.")
+        print("Attention ! l'heure de fin est identique Ã  l'heure de début.")
         continue
     if debut > fin:
-        print("Attention ! le dÃ©but de la location est aprÃ¨s la fin ...")
+        print("Attention ! le dÃ©but de la location est après la fin ...")
         continue
 
     heures_tarif_1 = 0
@@ -23,7 +23,7 @@ while True:
 
     total = heures_tarif_1 * 1.0 + heures_tarif_2 * 2.0
 
-    print("Vous avez louÃ© votre vÃ©lo pendant")
+    print("Vous avez loué votre vélo pendant")
     if heures_tarif_1 > 0:
         print(f"{heures_tarif_1} heure(s) au tarif horaire de 1.0 euro(s)")
     if heures_tarif_2 > 0:
