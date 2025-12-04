@@ -7,13 +7,13 @@ dic = {
 print(f"votre nom est '{dic['name']}', prénom est '{dic['firstname']}', "
       f"vous faites partie de la promo '{dic['promo']}' et votre groupe est '{dic['group']}'.")
 
-print("\nLes clés du dictionnaire sont :")
+print("Les clés du dictionnaire sont :")
 for k in dic.keys():
     print("-", k)
-print("\nLes valeurs du dictionnaire sont :")
+print("Les valeurs du dictionnaire sont :")
 for v in dic.values():
     print("-", v)
-print("\nLes tuplets du dictionnaire sont :")
+print("Les tuplets du dictionnaire sont :")
 for item in dic.items():
     print("-", item)
 
