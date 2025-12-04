@@ -1,23 +1,16 @@
-nMax = 3
+nMax = 10
 v1 = []
 v2 = []
-n = int(input("Quelle est la taille de vos vecteurs [entre 1 et 10] ?"))
-while 1 < n or x < nMax :
-    print("Erreur, saisir une nouvelle valeur :")
-    x = int(input("Quelle est la taille de vos vecteurs [entre 1 et 10] ?"))
-
-print("Saisir valeur de v1 :")
+n = int(input(f"Quelle est la taille de vos vecteurs [entre 1 et {nMax}] ? "))
+while n < 1 or n > nMax:
+    n = int(input("Taille invalide, recommencez : "))
+print("Saisie du premier vecteur :")
 for i in range(n):
-    valeur = int(input(f"v1{i} = "))
-    v1.append(valeur)
-
-print("Saisir valeur de v2 : ")
+    v1.append(float(input(f"v1[{i}] = ")))
+print("Saisie du second vecteur :")
 for i in range(n):
-    valeur = int(input(f"v2{i} = "))
-    v2.append(valeur)
-
-scalaire = 0
+    v2.append(float(input(f"v2[{i}] = ")))
+produit = 0
 for i in range(n):
-    scalaire = scalaire + v1[i] + v2[i]
-
-print(f"Le prorduit scalaire de v1 par v2 vaut {scalaire}")
+    produit += v1[i] * v2[i]
+print(f"Le produit scalaire de v1 par v2 vaut {produit}.")
