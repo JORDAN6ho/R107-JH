@@ -22,11 +22,15 @@ def combienInferieur(table, vseuil):
             c = c + 1
     return c
 
-nbr =
+nbr =  int(input("Choisir valeur de nbr : "))
 vmin = int(input("Choisir valeur de vmin : "))
 vmax = int(input("Choisir valeur de vmax : "))
 
 choix = input("Voulez-vous préciser le seuil")
+if (choix == "O" or choix == "Oui"):
+    vseuil = int(input("Choisir valeur de vseuil : "))
+else :
+    vseuil == 30
 
 nb = 100
 print(f"Générer {nb} nombres entiers entre 0 et 100")
