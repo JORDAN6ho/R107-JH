@@ -21,21 +21,28 @@ def combienInferieur(table, vseuil):
         if v < vseuil :
             c = c + 1
     return c
-
-nbr =  int(input("Choisir valeur de nbr : "))
-vmin = int(input("Choisir valeur de vmin : "))
-vmax = int(input("Choisir valeur de vmax : "))
-
-choix = input("Voulez-vous préciser le seuil")
-if (choix == "O" or choix == "Oui"):
-    vseuil = int(input("Choisir valeur de vseuil : "))
-else :
-    vseuil == 30
-
 nb = 100
 print(f"Générer {nb} nombres entiers entre 0 et 100")
 tab = generer(nb, 0, 100)
 tab.sort()
 print(tab)
 total = combienInferieur(tab, 25)
+print(f"Il y en a {total} inférieurs à 25")
+
+#b
+nbr =  int(input("Choisir valeur de nbr : "))
+vmin = int(input("Choisir valeur de vmin : "))
+vmax = int(input("Choisir valeur de vmax : "))
+
+choix = input("Voulez-vous préciser le seuil :")
+if choix in ["o" or "oui"]:
+    vseuil = int(input("Choisir valeur de vseuil : "))
+else :
+    vseuil = 30
+
+
+tab = generer(nb,vmin,vmax)
+tab.sort()
+print(tab)
+total = combienInferieur(tab,vseuil)
 print(f"Il y en a {total} inférieurs à 25")
