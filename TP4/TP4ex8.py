@@ -28,6 +28,6 @@ binome = {
     "id1": perso1,
     "id2": perso2
 }
-print("\nLes étudiants formants le binôme sont :")
+print("Les étudiants formants le binôme sont :")
 for etu in binome.values():
     print(f"- L'étudiant {etu['name']} {etu['firstname']} du groupe {etu['group']}")

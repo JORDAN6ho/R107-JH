@@ -17,7 +17,6 @@ for i in range(len(L1)):
         courant = cherche
 print(f"Le nombre le plus fréquent dans la liste est le : {courant} ({autre} x)")
 
-
 """ ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** *
 * Ne rien modifier apres cette ligne.
 ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** * / """

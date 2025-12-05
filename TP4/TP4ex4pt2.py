@@ -8,3 +8,5 @@ for i in L1:
 
     if c > autre :
         courant = c
+
+print(f"Le nombre le plus fréquent dans la liste est le : {courant} ({autre} x)")
