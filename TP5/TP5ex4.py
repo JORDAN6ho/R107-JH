@@ -1,4 +1,3 @@
-
 somme = int(input("Entrez une somme en euros : "))
 billet100 = somme // 100
 reste = somme % 100
